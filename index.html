@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soluciones digitales a tu medida: Desarrollo Web, Automatización de Procesos y Sistemas Administrativos por Alexander Olmedo." />
+  <title>Alexander Olmedo | Soluciones Digitales a tu Medida</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header class="header" id="inicio">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">Alexander<span>Olmedo</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú de navegación">
+        <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#beneficios" class="nav__link">Por qué elegirme</a></li>
+        <li><a href="#proceso" class="nav__link">Proceso</a></li>
+        <li><a href="#cotizar" class="nav__btn">Cotizar Proyecto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Hero (Portada) -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge">Desarrollo Web & Automatización</span>
+          <h1>Transformo tus procesos manuales en <span>soluciones digitales</span></h1>
+          <p>
+            Diseño páginas web modernas, sistemas de control de inventario y herramientas automatizadas en la nube para optimizar el tiempo y las ventas de tu negocio.
+          </p>
+          <div class="hero__actions">
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            <a href="#servicios" class="btn btn--outline">Explorar Servicios</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <strong>100%</strong>
+              <span>Diseño Responsivo</span>
+            </div>
+            <div>
+              <strong>+40%</strong>
+              <span>Ahorro en tiempo operativo</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Disponibilidad en la nube</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="code-window">
+            <div class="code-window__header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <small>solucion_digital.js</small>
+            </div>
+            <pre class="code-window__body"><code>const negocio = {
+  cliente: "Tu Empresa",
+  problema: "Procesos lentos y manuales",
+  solucion: [
+    "Landing Page de Alta Conversión",
+    "Automatización Google Workspace",
+    "Control de Inventario Web"
+  ],
+  estado: "Listo para escalar 🚀"
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios con Filtro Interactivo -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__header">
+          <h2>Soluciones Diseñadas para Crecer</h2>
+          <p>Filtra por categoría para encontrar la herramienta exacta que necesita tu operación.</p>
+        </div>
+
+        <!-- Botones de Filtro -->
+        <div class="filters" role="group" aria-label="Filtrar servicios">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+          <button class="filter-btn" data-filter="automatizacion">Automatización</button>
+          <button class="filter-btn" data-filter="datos">Análisis y Gestión</button>
+        </div>
+
+        <!-- Cuadrícula de Servicios -->
+        <div class="services__grid" id="servicesGrid">
+          <article class="service-card" data-category="web">
+            <div class="service-card__icon">🌐</div>
+            <h3>Landing Pages Profesionales</h3>
+            <p>Sitios web rápidos, optimizados para celulares y enfocados en convertir visitantes en clientes reales mediante llamados a la acción claros.</p>
+            <ul class="service-card__list">
+              <li>Diseño adaptable (Mobile-First)</li>
+              <li>Integración directa con WhatsApp</li>
+              <li>Optimización de velocidad y SEO básico</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-category="automatizacion">
+            <div class="service-card__icon">⚙️</div>
+            <h3>Automatización con Google Apps Script</h3>
+            <p>Conecta Google Sheets, Drive y Gmail para eliminar tareas repetitivas, generar facturas en PDF y enviar reportes automáticos.</p>
+            <ul class="service-card__list">
+              <li>Generación automática de documentos</li>
+              <li>Notificaciones por correo programadas</li>
+              <li>Sin costos mensuales de servidores</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-category="datos">
+            <div class="service-card__icon">📊</div>
+            <h3>Sistemas Web de Inventario y Control</h3>
+            <p>Aplicaciones web a la medida para registrar entradas, salidas, clientes y movimientos con respaldo seguro en la nube.</p>
+            <ul class="service-card__list">
+              <li>Control de stock en tiempo real</li>
+              <li>Búsqueda instantánea y filtros</li>
+              <li>Exportación de reportes a Excel/CSV</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-category="datos">
+            <div class="service-card__icon">📈</div>
+            <h3>Modelos Financieros y Tableros</h3>
+            <p>Estructuración de hojas de cálculo avanzadas para control presupuestal, amortización de créditos y seguimiento de indicadores.</p>
+            <ul class="service-card__list">
+              <li>Fórmulas dinámicas y validación de datos</li>
+              <li>Tableros visuales de indicadores (KPIs)</li>
+              <li>Limpieza y organización de bases de datos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Beneficios -->
+    <section class="section section--alt" id="beneficios">
+      <div class="container">
+        <div class="section__header">
+          <h2>¿Por qué trabajar conmigo?</h2>
+          <p>Enfoque práctico, comunicación directa y código limpio orientado a resolver problemas reales.</p>
+        </div>
+
+        <div class="benefits__grid">
+          <div class="benefit-item">
+            <h3>01. Soluciones a la Medida</h3>
+            <p>No pagas por funciones innecesarias. Construyo exactamente lo que tu flujo de trabajo requiere.</p>
+          </div>
+          <div class="benefit-item">
+            <h3>02. Entrega Documentada</h3>
+            <p>Cada proyecto incluye manual de uso y código estructurado para facilitar futuras mejoras.</p>
+          </div>
+          <div class="benefit-item">
+            <h3>03. Soporte Cercano</h3>
+            <p>Acompañamiento directo durante la puesta en marcha para asegurar que tú y tu equipo dominen la herramienta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proceso de Trabajo -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section__header">
+          <h2>Mi Proceso de Trabajo</h2>
+          <p>Cuatro pasos claros desde la idea inicial hasta el lanzamiento.</p>
+        </div>
+
+        <div class="steps__grid">
+          <div class="step">
+            <span class="step__number">1</span>
+            <h4>Diagnóstico</h4>
+            <p>Analizamos tu necesidad actual y definimos el alcance exacto del proyecto.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">2</span>
+            <h4>Prototipo</h4>
+            <p>Diseño la estructura visual y lógica de datos para validar contigo antes de programar.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">3</span>
+            <h4>Desarrollo</h4>
+            <p>Construcción del sitio o sistema aplicando buenas prácticas de rendimiento y seguridad.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">4</span>
+            <h4>Despliegue</h4>
+            <p>Publicación en la nube, pruebas finales y capacitación de entrega.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Formulario de Cotización con Integración WhatsApp -->
+    <section class="section section--alt" id="cotizar">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2>Hablemos de tu Proyecto</h2>
+          <p>Completa el formulario con los detalles básicos de lo que necesitas. Al enviarlo, se preparará un mensaje directo a mi WhatsApp para responderte lo antes posible.</p>
+          
+          <ul class="contact__details">
+            <li><strong>Ubicación:</strong> Bogotá D.C., Colombia (Atención remota global)</li>
+            <li><strong>Correo:</strong> alexanderolmedo100@gmail.com</li>
+            <li><strong>WhatsApp:</strong> +57 310 524 7136</li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="quoteForm" novalidate>
+          <div class="form-group">
+            <label for="clientName">Tu Nombre o Empresa *</label>
+            <input type="text" id="clientName" name="clientName" placeholder="Ej. Alexander Olmedo / Comercializadora XYZ" required />
+            <small class="error-msg" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="serviceType">Servicio de Interés *</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="">Selecciona una opción...</option>
+              <option value="Landing Page Profesional">Landing Page Profesional</option>
+              <option value="Automatización con Google Apps Script">Automatización con Google Apps Script</option>
+              <option value="Sistema Web de Inventario / Control">Sistema Web de Inventario / Control</option>
+              <option value="Modelo Financiero / Base de Datos">Modelo Financiero / Base de Datos</option>
+              <option value="Otro proyecto a medida">Otro proyecto a medida</option>
+            </select>
+            <small class="error-msg" id="serviceError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="projectDetails">Cuéntame brevemente qué necesitas *</label>
+            <textarea id="projectDetails" name="projectDetails" rows="4" placeholder="Describe tu idea, problema actual o plazo estimado..." required></textarea>
+            <small class="error-msg" id="detailsError"></small>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Enviar Cotización por WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>&copy; <span id="currentYear"></span> Alexander Olmedo. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="https://github.com/sistemas-alex" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/alexanderolmedo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:alexanderolmedo100@gmail.com">Correo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
